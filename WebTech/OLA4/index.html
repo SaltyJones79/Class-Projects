@@ -1,0 +1,66 @@
+<!--
+    Programer: Jeremy Saltz
+    Class: CSCI 4410
+    Program description: The program makes a meme page
+    It opens with a place holder pic and lets the user 
+    enter text on the top of the meme and on the bottom of the
+    meme. The user then can insert a photo url into the url
+    input and change the photo for the meme. After that the 
+    user can move the picture around up, down, left, and right
+    using the arrow keys. 
+-->
+<!DOCTYPE html>
+<!-- Defines the document type and version of HTML -->
+<html>
+<!-- The root element of an HTML page -->
+
+<head>
+    <!-- Contains meta-information about the document -->
+    <title>Meme Generator</title>
+    <!-- Sets the title of the document, which appears in the browser tab -->
+</head>
+
+<!-- Link to jQuery, a popular JavaScript library for simplifying JavaScript programming -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Link to an external JavaScript file named 'meme.js' that presumably contains the logic for the meme generator -->
+<script src="meme.js"></script>
+<!-- Link to an external CSS stylesheet named 'meme.css' that styles the elements of the meme generator -->
+<link type="text/css" rel="stylesheet" href="meme.css" />
+
+<body>
+    <!-- Contains the content of the document -->
+
+    <!-- A header that welcomes users to the meme generator -->
+    <h2>Welcome to my Meme Generator!</h2>
+
+    <!-- A division that acts as a container for the first meme. It's presumably styled by CSS and JavaScript to display meme captions -->
+    <div id="meme1">
+        <h1 id="top-caption"></h1> <!-- Placeholder for the top caption of the meme -->
+        <h1 id="bottom-caption"></h1> <!-- Placeholder for the bottom caption of the meme -->
+    </div>
+
+    <!-- A division that contains input fields for users to enter the top text, bottom text, and the image URL for generating a meme -->
+    <div id="meme2">
+        <label for="top-text">Top Text:</label>
+        <!-- Label for the top text input field -->
+        <input id="top-text" type="text">
+        <!-- Input field for entering the top text of the meme -->
+
+        <label for="bottom-text">Bottom Text:</label>
+        <!-- Label for the bottom text input field -->
+        <input id="bottom-text" type="text">
+        <!-- Input field for entering the bottom text of the meme -->
+
+        <label for="image-url">Image URL:</label>
+        <!-- Label for the image URL input field -->
+        <input id="image-url" type="text">
+        <!-- Input field for entering the URL of the image to be used in the meme -->
+    </div>
+
+    <!-- A division meant to display the image for the meme. It is absolutely positioned, which allows it to be placed over other elements if needed -->
+    <div id="meme3" style="height: 350px; width: 375px; position: absolute;">
+        <img id="img1" src="mtsu.jpg" style="height: 350px; width: 375px">
+        <!-- An image element for displaying the meme image. The source of the image is set to 'mtsu.jpg' -->
+    </div>
+</body>
+</html>

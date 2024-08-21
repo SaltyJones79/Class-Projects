@@ -1,0 +1,166 @@
+/*
+Programer: Jeremy Saltz
+Class: CSCI 4410
+Program Description: The CSS style sheet for the two html pages.
+The style sheet lets the page be formatted uniformly  for each 
+page. This way the tables, paragraphs, and other content is uniform.
+*/
+
+/*
+changes the attributes of all paragraphs
+*/
+p {
+    color: #0a0638;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+/*
+a custom paragraph
+*/
+
+#para1 {
+    color: #1bc570;
+}
+
+/*
+changes the attributes of all h1
+*/
+
+h1 {
+    color: #542c58;
+    text-align: center;
+    font-size: 70px;
+    /* background-color: rgb(196, 129, 135); */
+}
+
+/*
+changes h2
+*/
+h2 {
+    color: #542c58;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*
+chages h3
+*/
+h3 {
+    color: #542c58;
+    text-align: center;
+    font-size: 35px;
+}
+
+/*
+changes the body
+*/
+body {
+    /*This is how you leave comments*/
+    /* background-image: url(Al_Cat.jpg); */
+    background-color: rgb(198, 228, 158);
+}
+
+/*
+changes the divs to be inline
+*/
+div {
+    display: inline-block;
+}
+
+/*
+changes the table attributes
+*/
+table {
+    color: rgb(26, 2, 34);
+    border-color: #7c165d;
+    background-color: rgb(130, 172, 97);
+    text-align: center;
+}
+
+/*
+chages the attributes of the follwoing table rows
+*/
+tr:first-child {
+    background-color: #9dcc53;
+}
+
+tr:nth-child(2) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(3) {
+    background-color: rgb(113, 160, 182);
+}
+
+tr:nth-child(4) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(5) {
+    background-color: rgb(113, 160, 182);
+}
+
+tr:nth-child(6) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(7) {
+    background-color: rgb(113, 160, 182);
+}
+
+tr:nth-child(8) {
+    background-color: aquamarine;
+}
+
+tr:nth-child(9) {
+    background-color: rgb(113, 160, 182);
+}
+
+tr:nth-child(10) {
+    background-color: aquamarine;
+}
+
+/*
+change color of the unordered list
+*/
+ul {
+    color: #72146d;
+}
+
+/*
+to make the nav bar
+*/
+.navbar {
+    background-color: rgb(198, 228, 158);
+    /* Dark background for visibility */
+    overflow: hidden;
+    /* Clear floats */
+}
+
+.navbar a {
+    float: left;
+    /* Positioning links to the left */
+    display: block;
+    /* Display links as blocks */
+    color: rgb(122, 45, 103);
+    /* Text color */
+    text-align: center;
+    /* Centering text */
+    padding: 14px 20px;
+    /* Padding for spacing */
+    text-decoration: none;
+    /* No underline on links */
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #9fb139;
+    color: black;
+}
+
+.gradient{
+    background: rgb(15,56,107);
+    background: linear-gradient(90deg, rgba(15,56,107,1) 0%, rgba(165,204,174,1) 68%);
+    }

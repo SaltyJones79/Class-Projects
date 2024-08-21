@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <!--Programer: Jeremy Saltz
+        Class: CSCI 4410
+        Program Discription:
+        The program is a simple web page using HTML. A CSS stylesheet was added to add 
+        some more flavor to the page. The page includes a tile, paragraph, picture, hyperlink, list, 
+        table, bookmark (to go back to the top of the page), several heading, and simple formatting.
+        -->
+
+  <head>
+    <title>Jeremy Saltz's OLA1</title>
+  </head>
+  <!--The title of the page.-->
+  <link
+    href="./style.css"
+    type="text/css"
+    rel="stylesheet"
+  /><!--This is for my CSS style sheet-->
+  <body>
+    <!--The Header for my page-->
+    <h1 title="About me title and page top" id="top">Here's ... Salty!</h1>
+    <!-- Using div for navigation -->
+    <div class="navbar">
+      <a href="OLA1.html">Home</a>
+      <a href="OLA2.html">CV</a>
+    </div>
+
+    <hr />
+    <br />
+    <!--The about me section and the header to introduce myself-->
+
+    <h3>About me, Salty (Jeremy Saltz)!</h3>
+
+    <p title="About me section">
+      <!--The paragraph for the webpage and talking about myself-->
+
+      Hello, my name is Jeremy Saltz. I am a senior Computer Science student at
+      MTSU. I graduate this May. I was originally going to go to school for jazz
+      preformance on bass guitar. I have three cats; Ada, Grace, and Alistar. I
+      play bass guitar and ukulele. I was in a band for over eight years. I play
+      boardgames, play table top roleplaying games, paint miniatures, and video
+      video games. I am taking a Web Tech and visual programming class this
+      semester because I am interested in front-end development. One of my
+      nicknames is "Salty." My nickname is just a play on my last name.
+    </p>
+    <hr />
+
+    <!--There are two ways to click on the link to the same web site.-->
+    <a title="edhrec.com" href="https://edhrec.com/" target="_blank">
+      <h3>Click the link. You know you want to!</h3>
+    </a>
+
+    <!--This is the picture that is also a link to a webpage.-->
+    <a title="edhrec.com" href="https://edhrec.com/" target="_blank"
+      ><img src="./SaltyJones.jpg" width="200px" height="300px"
+    /></a>
+    <hr />
+
+    <!--The header for me list-->
+    <h2>Hobbies</h2>
+    <!--The list with lists in the lists-->
+    <ul style="list-style-type: square">
+      <li>Table Top Games</li>
+      <ul style="list-style-type: circle">
+        <li>Gloomhaven</li>
+        <li>Caverna</li>
+        <li>Mysterium</li>
+        <li>Lords of Waterdeep</li>
+        <li>Unmatched</li>
+        <li>The Crew</li>
+        <li>Dungeons and Dragons</li>
+        <li>Magic The Gathering</li>
+      </ul>
+      <li>Video Games</li>
+      <ul style="list-style-type: circle">
+        <li>Baldur's Gate 3</li>
+        <li>World of Warcraft</li>
+        <li>Dredge</li>
+        <li>Age of Wonders</li>
+        <li>Mario Kart 64</li>
+        <li>Fire Emblem: Three Houses</li>
+      </ul>
+      <li>Music</li>
+      <ul style="list-style-type: circle">
+        <li>Live music</li>
+        <li>Favorite Bands</li>
+        <ul style="list-style-type: disc">
+          <li>Phish</li>
+          <li>The Beatles</li>
+          <li>The Band</li>
+          <li>Talking Heads</li>
+          <li>Pink Floyd</li>
+          <li>Snarky Puppy</li>
+          <li>Little Feat</li>
+          <li>Steely Dan</li>
+          <li>Vulfpeck</li>
+          <li>Bob Marley</li>
+        </ul>
+      </ul>
+      <li>Miniature Painting</li>
+      <ul style="list-style-type: circle">
+        <li>Warhammer</li>
+        <li>D&D miniatures</li>
+        <li>Wargaming terrian</li>
+        <li>D&D terrian</li>
+        <li>ScaleUSA models</li>
+      </ul>
+    </ul>
+    <hr />
+
+    <!--The header for my section with the table-->
+
+    <h3>My favorite music albums</h3>
+
+    <!--The table for the OLA-->
+    <table border="5px">
+      <tr>
+        <th>Band</th>
+        <th>Album</th>
+        <th>Year released</th>
+      </tr>
+
+      <tr>
+        <td>Phish</td>
+        <td>Junta</td>
+        <td>1989</td>
+      </tr>
+
+      <tr>
+        <td>Paul Simon</td>
+        <td>Graceland</td>
+        <td>1986</td>
+      </tr>
+      <tr>
+        <td>Pink Floyd</td>
+        <td>Dark Side of the Moon</td>
+        <td>1973</td>
+      </tr>
+      <tr>
+        <td>Talking Heads</td>
+        <td>Stop Making Sense</td>
+        <td>1984</td>
+      </tr>
+      <tr>
+        <td>Little Feat</td>
+        <td>Waiting for Columbus</td>
+        <td>1978</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!--The Bookmark to take you back to the top of the page.-->
+    <a href="#top">Go to the top.</a>
+  </body>
+</html>

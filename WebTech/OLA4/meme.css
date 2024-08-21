@@ -1,0 +1,97 @@
+/*
+    Programer: Jeremy Saltz
+    Class: CSCI 4410
+    Program description: The program makes a meme page
+    It opens with a place holder pic and lets the user 
+    enter text on the top of the meme and on the bottom of the
+    meme. The user then can insert a photo url into the url
+    input and change the photo for the meme. After that the 
+    user can move the picture around up, down, left, and right
+    using the arrow keys. This is the css file that hadles the
+    pretty stuff.
+ */
+/* General styles applied to the body element of the page */
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font family for the text */
+    background-color: #012346; /* Sets the background color */
+    padding: 20px; /* Adds padding around the content */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Arranges flex items in a column */
+    align-items: center; /* Centers items horizontally */
+    color: rgb(170, 14, 118); /* Sets the default text color */
+}
+
+/* Styles applied to all h2 elements */
+h2 {
+    color: rgb(170, 14, 118); /* Sets the text color */
+}
+
+/* Styles for the meme containers */
+#meme1, #meme2 {
+    border: 10px solid #d49408; /* Sets a solid border with a specified color */
+    padding: 20px; /* Adds padding inside the elements */
+    margin: 10px 0; /* Adds vertical margin and removes horizontal margin */
+    width: 450px; /* Sets the width */
+    height: 225px; /* Sets the height */
+    text-align: center; /* Centers the text horizontally */
+    position: relative; /* Enables positioning of child elements absolutely within */
+}
+
+/* Styles for input elements of type "text" */
+input[type="text"] {
+    width: 90%; /* Sets the width to 90% of its parent element */
+    padding: 10px; /* Adds padding inside the input */
+    margin: 10px 0; /* Adds vertical margin and removes horizontal margin */
+    border-radius: 5px; /* Rounds the corners of the input */
+    border: 1px solid #121213; /* Sets the border color and thickness */
+}
+
+/* Styles for the meme3 element */
+#meme3 {
+    border: none; /* Removes any border */
+    position: absolute; /* Positions the element absolutely within its relative parent */
+    top: 18%; /* Positions the element vertically within its parent */
+    z-index: 1; /* Ensures it's positioned behind other content */
+    /* Margin is not set; resets are not shown in the original CSS */
+}
+
+/* Additional styles for the meme1 element, overriding some of the previous */
+#meme1 {
+    height: 425px; /* Overrides the height */
+    width: 1000px; /* Overrides the width */
+    z-index: 2; /* Ensures it's positioned in front of #meme3 */
+    color: rgb(250, 244, 247); /* Sets the text color */
+    display: flex; /* Enables flexbox layout within this container */
+    flex-direction: column; /* Arranges child elements in a column */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    position: relative; /* Ensures it acts as a positioning context for absolutely positioned children */
+    padding: 10px; /* Adds padding */
+}
+
+/* Styles for meme2 to adjust its vertical positioning */
+#meme2 {
+    margin-top: 25px; /* Increases the top margin to space it further from previous elements */
+}
+
+/* Styles for the caption at the top of a meme */
+#top-caption {
+    position: absolute; /* Positions the element absolutely within its parent */
+    top: 25px; /* Sets its position from the top */
+    width: 100%; /* Ensures it spans the full width of its parent */
+    text-align: center; /* Centers the text horizontally */
+    font-size: 30px; /* Sets the size of the font */
+}
+
+/* Styles for the caption at the bottom of a meme */
+#bottom-caption {
+    position: absolute; /* Positions the element absolutely within its parent */
+    bottom: 25px; /* Sets its position from the bottom */
+    width: 100%; /* Ensures it spans the full width of its parent */
+    text-align: center; /* Centers the text horizontally */
+    font-size: 30px; /* Sets the size of the font */
+}
+.gradient{
+    background: rgb(15,56,107);
+    background: linear-gradient(90deg, rgba(15,56,107,1) 0%, rgba(165,204,174,1) 68%);
+    }

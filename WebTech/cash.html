@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+    Programmer: Jeremy Saltz
+    Class: CSCI 4410
+    Program discription:
+    The program is a simple scanner program that asks the user to enter
+    how many items they would like to enter. Then it loops through as they
+    enter the all the items. It then saves each price entered to the total
+    after the last item price is entered the user can then click the total
+    button and see the total price.
+-->
+<html>
+    <head>
+        <!-- the title of the page-->
+        <title>
+            Cash register 
+        </title>
+        <!--links to the cash.css file-->
+        <linK href = "./cash.css" type = "text/css" rel = "stylesheet" />
+        <!--Links to the cash.js file with the functions for the scan
+        and total-->
+        <script src = "./cash.js"></script>
+    </head>
+    <body>
+        <!--the header to the page-->
+        <h1>Welcome to use my Cash Register!</h1>
+        <hr>
+        <div>
+            <!--The two buttons one calls the scan fucntion and
+            the other calls the print function to show the total-->
+            <button onclick="scan()" class="gradient">Scan your item</button>
+            <button onclick="print()"class="gradient">Total</button>
+        </div>
+        <hr>
+    </body>
+
+</html>

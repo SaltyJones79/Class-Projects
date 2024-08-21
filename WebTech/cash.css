@@ -1,0 +1,47 @@
+/*
+Programmer: Jeremy Saltz
+Class: CSCI 4410
+Program dicription:
+The CSS file coltrols the colors for the body background,
+the buttons, and the div elements.
+*/
+
+/*
+controls the body elements
+ */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(146, 77, 68);
+    color: rgb(8, 48, 66);
+  }
+  
+/*
+controls the button elements
+*/
+  button {
+    margin: 5px;
+    padding: 25px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(31, 177, 55);
+    color:rgb(78, 11, 33)
+  }
+  
+  /*
+  controls the div elements
+  */
+  div {
+    margin-top: 30px;
+    display: inline-block;
+    width: 200px;
+    height: 165px;
+    background-color: rgb(198, 219, 141);
+    padding: auto;
+    border-radius: 25px;
+  }
+  .gradient{
+    background: rgb(15,56,107);
+    background: linear-gradient(90deg, rgba(15,56,107,1) 0%, rgba(165,204,174,1) 68%);
+    }
